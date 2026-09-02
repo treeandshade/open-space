@@ -1,0 +1,7 @@
+{
+  "name": "열린공간 | OPEN SPACE",
+  "description": "감각을 짓는 프리미엄 실내 인테리어 디자인 스튜디오 열린공간(OPEN SPACE) 공식 웹사이트",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
