@@ -67,14 +67,22 @@ export const StoryView: React.FC<StoryViewProps> = ({ setActiveTab }) => {
         </div>
 
         <div className="lg:col-span-6">
-          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5E7EB] dark:border-[#2A2C2E] aspect-[4/3]">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5E7EB] dark:border-[#2A2C2E] aspect-[4/3] bg-zinc-900">
             <img
-              src="https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=1200&q=80"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
               alt="열린공간 디테일 마감 및 천연 자재"
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
               loading="lazy"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.dataset.fallback) {
+                  target.dataset.fallback = 'true';
+                  target.src = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80';
+                }
+              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-6 left-6 right-6 text-white text-xs font-mono">
               <span className="text-[#D4C3B3]">DETAIL & MATERIAL</span> · 이태리 직수입 대리석 및 친환경 규조토 벽체
             </div>
@@ -91,7 +99,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ setActiveTab }) => {
                 HEAD ARCHITECT & DESIGNER
               </span>
               <h2 className="font-light text-3xl sm:text-4xl tracking-tight text-[#2B2D2F] dark:text-[#EAEAEA] mt-2">
-                대표 디자이너 허윤회 인터뷰
+                대표 디자이너 서승협 인터뷰
               </h2>
               <p className="text-sm text-[#2B2D2F]/70 dark:text-zinc-400 mt-1">
                 "공간은 사람의 마음을 담는 가장 큰 그릇입니다."
@@ -99,7 +107,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ setActiveTab }) => {
             </div>
 
             <div className="px-5 py-3 rounded-lg bg-[#2B2D2F] text-[#FBFBFA] font-mono text-xs text-center">
-              <div className="text-[#D4C3B3] font-semibold">HEO YOON-HOE</div>
+              <div className="text-[#D4C3B3] font-semibold">SEO SEUNG-HYEOP</div>
               <div className="text-zinc-400 text-[10px] mt-0.5">CHIEF EXECUTIVE DESIGNER</div>
             </div>
           </div>
@@ -167,7 +175,7 @@ export const StoryView: React.FC<StoryViewProps> = ({ setActiveTab }) => {
             당신만의 특별한 공간 이야기를 시작하세요
           </h3>
           <p className="text-xs sm:text-sm text-[#D4C3B3]">
-            수석 디자이너 허윤회와의 1:1 심층 상담을 통해 최적의 공간 솔루션을 제안해 드립니다.
+            수석 디자이너 서승협과의 1:1 심층 상담을 통해 최적의 공간 솔루션을 제안해 드립니다.
           </p>
         </div>
         <button

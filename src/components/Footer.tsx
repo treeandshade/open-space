@@ -40,9 +40,9 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
             {/* Strict Placement Designer & Developer Credits */}
             <div className="pt-4 border-t border-[#E5E7EB] dark:border-[#2A2C2E]/60">
               <div className="font-mono text-[11px] text-[#2B2D2F]/50 dark:text-zinc-500/80 leading-relaxed space-y-1">
-                <div>주식회사 열린공간 | 대표 디자이너 허윤회</div>
-                <div>서울특별시 강남구 테헤란로 108길</div>
-                <div>Copyright © 2024 OPEN SPACE. Developed by 허윤회. All rights reserved.</div>
+                <div>주식회사 열린공간 | 대표 디자이너 서승협</div>
+                <div>강원 원주시 관설안길 23-8 1층 열린공간</div>
+                <div>Copyright © 2024 OPEN SPACE. Developed by 서승협. All rights reserved.</div>
               </div>
             </div>
           </div>
@@ -128,11 +128,11 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
             <div className="space-y-3 text-xs text-[#2B2D2F]/80 dark:text-zinc-300 font-sans">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D4C3B3] shrink-0 mt-0.5" />
-                <span>서울특별시 강남구 테헤란로 108길 (열린빌딩 4F)</span>
+                <span>강원 원주시 관설안길 23-8 1층 열린공간</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#D4C3B3] shrink-0" />
-                <span>02-584-9920 (대표 직통 카운셀링)</span>
+                <span>0507-1386-0970 (대표 직통 카운셀링)</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#D4C3B3] shrink-0" />
@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-[#D4C3B3] shrink-0" />
-                <span>평일 09:30 - 18:30 (주말 100% 예약제)</span>
+                <span>24시간 영업 연중무휴</span>
               </div>
             </div>
 

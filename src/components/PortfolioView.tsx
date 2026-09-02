@@ -216,6 +216,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                 <img
                   src={item.image}
                   alt={item.title}
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -334,6 +335,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                   <img
                     src={selectedItem.image}
                     alt={selectedItem.title}
+                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-4 right-4 px-3 py-1.5 rounded-md bg-black/75 text-[#D4C3B3] font-mono text-xs backdrop-blur-md">

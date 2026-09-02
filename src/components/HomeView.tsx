@@ -78,7 +78,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               className="text-base sm:text-lg text-[#2B2D2F]/75 dark:text-zinc-300 font-sans font-light leading-relaxed max-w-xl"
             >
               열린공간은 불필요한 장식을 덜어내고 선과 면의 완벽한 비례로 삶의 품격을 완성합니다. 
-              수석 디자이너 허윤회의 1:1 맞춤형 하이엔드 공간 큐레이션을 경험해보세요.
+              수석 디자이너 서승협의 1:1 맞춤형 하이엔드 공간 큐레이션을 경험해보세요.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 pt-2">
@@ -146,6 +146,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <img
                 src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
                 alt="열린공간 프리미엄 미니멀 거실 인테리어"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
                 loading="eager"
               />
@@ -249,6 +250,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <img
                   src={item.image}
                   alt={item.title}
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -300,7 +302,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <span className="font-serif italic text-[#D4C3B3]">단정한 비움과 세심한 배려</span>에서 시작됩니다.”
             </blockquote>
             <div className="pt-2">
-              <div className="text-base font-semibold text-white">허윤회 (Heo Yoon-hoe)</div>
+              <div className="text-base font-semibold text-white">서승협 (Seo Seung-hyeop)</div>
               <div className="text-xs text-[#D4C3B3] font-mono">주식회사 열린공간 대표 디자이너 / 수석 공간 큐레이터</div>
             </div>
           </div>
